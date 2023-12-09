@@ -1,0 +1,12 @@
+Command:
+printf 'aboba
+boba
+' | python3 03-wc.py
+
+[2, 2, 11]
+
+Command:
+python3 03-wc.py 03-wc.py
+
+[33, 127, 1003] 03-wc.py
+

@@ -1,0 +1,12 @@
+$ python3 -u "/Users/leonidkorotkevich/MEGA/work/itmo/py/hw-04/scripts/01-fib.py"
+
+fib(35) = 9227465
+
+synchronous
+9.865004062652588 seconds
+
+threading
+9.890197992324829 seconds
+
+multiprocessing
+1.5651228427886963 seconds

@@ -1,0 +1,36 @@
+Command:
+printf 'aboba
+boba
+' | python3 01-nl.py
+
+1	aboba
+2	boba
+
+Command:
+python3 01-nl.py 01-nl.py
+
+1	'''
+2	Написать упрощенный вариант утилиты `nl` -- скрипт, который выдает в `stdout` пронумерованные строки из файла.
+3	Если файл не передан, то скрипт читает строки из `stdin`.
+4	
+5	Он должен работать так же, как `nl -b a`.
+6	'''
+7	
+8	import sys
+9	
+10	def main():
+11	    if len(sys.argv) == 1:
+12	        f = sys.stdin
+13	    elif len(sys.argv) == 2:
+14	        f = open(sys.argv[1])
+15	    else:
+16	        print('Usage: python3 01-nl.py [FILE]')
+17	        sys.exit(1)
+18	
+19	    for i, line in enumerate(f):
+20	        print(f'{i + 1}\t{line}', end='')
+21	
+22	    f.close()
+23	
+24	if __name__ == '__main__':
+25	    main()

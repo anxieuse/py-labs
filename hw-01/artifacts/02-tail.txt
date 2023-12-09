@@ -1,0 +1,86 @@
+Command:
+printf 'a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+m
+n
+o
+p
+q
+r
+s
+t
+u
+v
+w
+x
+y
+z
+' | python3 02-tail.py
+
+j
+k
+l
+m
+n
+o
+p
+q
+r
+s
+t
+u
+v
+w
+x
+y
+z
+
+Command:
+python3 02-tail.py 02-tail.py
+
+==> 02-tail.py <==
+                print()
+            print(f'==> {file} <==')
+            f = open(file)
+            lines = f.readlines()
+            for line in lines[-10:]:
+                print(line, end='')
+            f.close()
+
+if __name__ == '__main__':
+    main()
+Command:
+python3 02-tail.py 02-tail.py 02-tail.py
+
+==> 02-tail.py <==
+                print()
+            print(f'==> {file} <==')
+            f = open(file)
+            lines = f.readlines()
+            for line in lines[-10:]:
+                print(line, end='')
+            f.close()
+
+if __name__ == '__main__':
+    main()
+==> 02-tail.py <==
+                print()
+            print(f'==> {file} <==')
+            f = open(file)
+            lines = f.readlines()
+            for line in lines[-10:]:
+                print(line, end='')
+            f.close()
+
+if __name__ == '__main__':
+    main()

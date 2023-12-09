@@ -1,0 +1,3 @@
+Успешно залил на pypi и сделал тестовый апдейт-релиз библиотеки для генерации таблиц:
+- https://pypi.org/project/my-latex-package/
+- pip install my-latex-package
